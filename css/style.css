@@ -241,7 +241,7 @@ text-align: center;
         font-size: small;
     }
     
-    .social{
+    .social > img{
         width: 30px;
         height: 30px;
     }
