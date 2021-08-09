@@ -10,8 +10,8 @@
    </head>
    <body>
       <header id="header">
-         <div class="container-fluid p-0">
-            <nav class="navbar navbar-expand-lg navbar-dark">
+         <div class="container-fluid nav-container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
                <div class="container-fluid">
                   <a class="navbar-brand" href="#header">VC Assist</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,30 +44,37 @@
                </div>
             </nav>
          </div>
-         <div class="container text-center">
-            <div class="row">
-               <div class="col-lg-7 col-sm-12 hero-text">
-                  <h1>VC Assist - Student Success Simplified</h1>
-                  <p>Our mobile platform, VC Assist, is a personalized 
-                     student dashboard that enables students to build effective 
-                     study habits by providing information that a student 
-                     should have easy access to.
-                  </p>
-                  <a href="https://www.gofundme.com/f/vc-assist" target="_blank">
-                  <button id="Go-Fund-Me-btn" class="btn px-5 py-2 mg-bottom">Donate to VC Assist</button>
-                  </a>
-                  <a href="https://forms.gle/ZcRmT4TdJ5U4ZTF86" target="_blank">
-                  <button id="Google-Form-btn" class="btn px-5 py-2 mg-bottom">Become a Beta Tester</button>
-                  </a>
+         <div class="container-fluid hero-container text-center p-0">
+            <div class="row justify-content-center hero-row">
+               <div class="col-lg-6">
+                  <div class="hero-text">
+                     <h1>Student Success Simplified</h1>
+                     <p>Our mobile platform, VC Assist, is a personalized 
+                        student dashboard that enables students to build effective 
+                        study habits by providing information that a student 
+                        should have easy access to.
+                     </p>
+                     <div class="row m-0 p-0">
+                        <div class="col-md-6 p-0 m-0">
+                           <a href="https://www.gofundme.com/f/vc-assist" target="_blank">
+                              <button id="Go-Fund-Me-btn" class="btn px-2 py-2 mg-bottom">Donate to VC Assist</button>
+                           </a>
+                        </div>
+                        <div class="col-md-6 p-0 m-0">
+                           <a href="https://forms.gle/ZcRmT4TdJ5U4ZTF86" target="_blank">
+                              <button id="Google-Form-btn" class="btn px-2 py-2 mg-bottom">Become a Beta Tester</button>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
                </div>
-               <div class="col-md-5 col-sm-12 h-25 box-shadow">
-                  <img class="img-fluid header-hero-img vb-header-hero-img" src="../css/assets/iphone-header.png"  alt="iphone image">
+               <div class="col-lg-6">
+                  <img class="img-fluid header-hero-img" src="../css/assets/ipad_dashboard.png"  alt="ipad dashboard example">
                </div>
             </div>
          </div>
-         <div class="col-md-12 col-sm-12 h-25">
-            <img class="img-fluid header-mask" src="../css/assets/header-white-mask.png" alt="iphone image">
-         </div>
+         <img class="img-fluid header-mask" src="../css/assets/header_wave.svg" alt="wave">
+         <div>
       </header>
       <main>
          <section id="section-1">
@@ -76,17 +83,17 @@
             </div>
             <div class="wrapper-flex">
                <div class="container container-team m-2">
-                  <img src='../css/assets/Edit Square.svg' alt='profile image' class="icon-img" style="background: linear-gradient(135deg, #FF9A8B 0%, #FF6A88 100%);">
+                  <img src='../css/assets/homework_pic.png' alt='profile image' class="illustration-vertical-img">
                   <h1 class="name">One tap for all your homework</h1>
                   <p class="description">Easily access all of your current day’s homework on one page with emphasized words and embedded hyperlinks.</p>
                </div>
                <div class="container container-team m-2">
-                  <img src='../css/assets/Activity.svg' alt='profile image' class="icon-img" style="background: linear-gradient(135deg, #FFBBEC 0%, #BFA9FF 100%);">
+                  <img src='../css/assets/dashboard_pic.png' alt='profile image' class="illustration-horizontal-img">
                   <p class="name">Personalized dashboard</p>
                   <p class="description">Personalized dashboard - Be greeted with the color day and your GPA. In addition, you can now join your current zoom class with the tap of a button.</p>
                </div>
                <div class="container container-team m-2">
-                  <img src='../css/assets/Setting.svg' alt='profile image' class="icon-img" style="background: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);">
+                  <img src='../css/assets/relax_pic.png' alt='profile image' class="illustration-horizontal-img">
                   <p class="name">No setup required</p>
                   <p class="description">Accounts? VC Assist uses your existing Warriorlife account to gather all your information. 
                   </p>
@@ -128,12 +135,12 @@
             <div class="container text-center">
               <div class="row" style="padding: 10px">
                 <div class="col-md-6" style="padding: 5px;">
-                  <div class="about-img" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;">
-                    <img class="img-fluid" src="../css/assets/VC Assist (4).png" alt="iphone image">
+                  <div class="about-img">
+                    <img class="img-fluid" src="../css/assets/mission_statement.svg" alt="iphone image">
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="panel about-txt" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; padding: 5px; height: 100%; ;">
+                  <div class="panel about-txt">
                     <h3 class="mt-5">Our Mission</h3>
                     <p class="pt-4 text-secondary form-control-sm">
                       &emsp;VC Assist is a not-for-profit business run by a group of high school students who have a passion for computer science and are committed to improving the Valley Christian experience for everyone. We accomplish this by collecting data from the different platforms the school offers and providing integrations to benefit students through an iOS application.
@@ -150,8 +157,7 @@
             </div>
             <div class="wrapper-flex">
                <div class="container container-team">
-                  <br><img src='../css/assets/brayden.jpg' alt='profile image' class="profile-img">
-                  <br><br>
+                  <img src='../css/assets/brayden.jpg' alt='profile image' class="profile-img">
                   <h1 class="name">Brayden Tam</h1>
                   <p class="description">CEO, Co-Founder, Software, Marketing</p>
                   <p class="description">Brayden Tam is a sophomore at Valley Christian High School. He is on the MATE ROV Varsity Team as a computer scientist, and enjoys programming with Python and Java, app development with Swift, and website creation with React</p>
@@ -169,7 +175,7 @@
                   <p class="description">Aditya Pawar is a sophomore at Valley Christian High School. He is interested in robotics with C++ and backend services in Elixir and Python using AWS</p>
                </div>
                <div class="container container-team">
-                  <br><img style="width:200px; height:auto;" src='../css/assets/vivek.jpg' alt='profile image' class="profile-img">
+                  <img style="width:200px; height:auto;" src='../css/assets/vivek.jpg' alt='profile image' class="profile-img">
                   <p class="name">Vivek Nadig</p>
                   <p class="description">Software</p>
                   <p class="description">Vivek Nadig is a sophomore at Valley Christian High School. He is interested in robotics, machine learning, and web development using Tensorflow and React with Python, C++, and Javascript</p>
@@ -177,16 +183,16 @@
             </div>
          </section>
          <div class="container mt-5" style="text-align:center">
-            <h1 class="text-dark center-text">Would you like to help us improve the VCS experience?</h1>
-            <a href="https://www.gofundme.com/f/vc-assist" target="_blank">
-            <button id="Go-Fund-Me-btn" class="btn px-5 py-2 align-content-center mg-bottom" style="background:#5E87FA; color:white">Go Fund Me</button>
+            <h1 class="text-dark center-text">Would you like to know more about VC Assist?</h1>
+            <a href="mailto:nadig.vivek@gmail.com" target="_blank">
+            <button id="Go-Fund-Me-btn" class="btn px-5 py-2 align-content-center mg-bottom" style="background:#5E87FA; color:white">Email VC Assist</button>
             </a>
          </div>
       </main>
       <footer>
          <section id="footer-contain">
             <div id="footer-container" class="col-12">
-               <img id="mask-footer" class="img-fluid" src="../css/assets/footer-white-mask.png" alt="iphone image">
+               <img id="mask-footer" class="img-fluid" src="../css/assets/footer_wave.svg" alt="iphone image">
                <div class="social">
                   <h1>
                   Social </h2>
