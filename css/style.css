@@ -23,42 +23,71 @@
 
 
  /* header and navbar*/
-header {
-    overflow: hidden;
+
+#header {
     position: relative;
+    overflow: hidden;
     top: 0;
     left: 0;
     background: var(--bggradient-header);
-}
-.box-shadow{
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-.header-mask {
-    position: relative;
-    top: 0;
-    left: 0;
+    height: 75vh;
+    max-height: 600px;
     z-index: 1;
 }
-.vb-header-hero-img{
+
+.nav-container{
+    color: white!important;
+}
+.box-shadow{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.header-mask{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    /* transform: scale(1.25); */
+}
+.hero-container{
+    position: absolute;
+    z-index: 3;
+    align-items: center;
+    overflow: hidden;
+    
+}
+.hero-row{
+    margin-top: 70px;
+    max-height: 500px;
+    overflow: hidden;
+    /* display:flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden; */
+}
+
+.header-hero-img {
+    border-radius: 8px;
+    /* margin-left: 10vw; */
+    width: 100%;
+    height: auto;
+    max-width: 550px;
+    min-width: 350px;
+    margin: auto;
+    z-index: 3;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display:block;
 }
-.header-hero-img {
-    position: absolute;
-    top: 2vh;
-    right: 17vw;
-    width: 350px;
-    height: auto;
-    z-index: 3;
-    filter: drop-shadow(0px 10px 3px black); 
-}
 .hero-text{
-    max-width: 420px;
-    margin-top: 40px;
+    margin: auto;
+    max-width: 500px;
+    /* margin-top: -25px; */
     font-family: var(--Poppins-font);
 }
 .hero-text h1{
     overflow: hidden;
     color: white;
+    font-size: 40px;
+    font-weight: 800;
 }
 .hero-text p{
     color: white;
@@ -74,15 +103,18 @@ header {
 }
 #Go-Fund-Me-btn{
     overflow: hidden;
+    white-space: nowrap;
     background: #FFFFFF;
     color: black;
     font-family: var(--Poppins-font);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
+    
 }
 
 #Google-Form-btn{
     overflow: hidden;
+    white-space: nowrap;
     background-color: #272B31;
     color: #FFFFFF;
     font-family: var(--Poppins-font);
@@ -145,9 +177,15 @@ h1, a{
     width: 8rem;
     clip-path: circle(53px at center);
 }
-.icon-img {
-    width: 5rem;
-    border-radius: 5px;
+.illustration-vertical-img {
+    width:7rem;
+    height: auto;
+    /* border-radius: 5px; */
+    margin-top: 15px;
+}
+.illustration-horizontal-img {
+    height: 7em;
+    /* border-radius: 5px; */
     margin-top: 15px;
 }
 
@@ -258,36 +296,82 @@ text-align: center;
 }
 
 
-@media screen and (max-width: 1440px){
+/* @media screen and (max-width: 1440px){
     .header-hero-img {
-        top: 2vh;
-        right: 10vw;
-        bottom:2vh;
         z-index: 3;
-        filter: drop-shadow(0px 10px 3px black); 
     }
-}
+} */
 
-@media screen and (max-width: 1024px){
+/* @media screen and (max-width: 1024px){
+    #header{
+        height: 50vh;
+        z-index: 1;
+    }
     .header-hero-img {
-        top: 2vh;
-        right: 10vw;
-        height: auto;
-        width: 300px;
-        z-index: 3;
-        filter: drop-shadow(0px 10px 3px black); 
+        max-width: 600px;
     }
-}
+    .hero-row{
+        max-height: none;
+    }
+} */
 
-@media screen and (max-width: 768px){
-    .vb-header-hero-img{
-        display: none;
+@media screen and (max-width: 990px){
+    #header {
+        /* position: relative;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        background: var(--bggradient-header); */
+        /* height: 50vh;
+        min-height: 900px;
+        z-index: 1; */
+        min-height: 1000px;
+        height: 50vh;
+        z-index: 1;
     }
-    .hero-text{
-        justify-content: center;
-        max-width: 420px;
+    
+    .hero-container{
+        /* position: absolute;
+        z-index: 3;
+        align-items: center */
+        height: 100%;
+        min-height: 750px
+        
+    }
+    .hero-row{
+        /* top: 15vh; */
+        margin-top: 150px;
+        max-height: none;
+        /* display:flex;
+        flex-direction: row;
+        justify-content: center; */
+    }
+    .header-hero-img {
+        /* border-radius: 8px;
+        margin-left: 10vw;
+        width: 100%;
+        height: auto; */
+        width: 85%;
+        max-width: 600px;
+        z-index: 100!important;
+        /* min-width: 350px;
+        z-index: 3;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        display:block; */
+    }
+    /* .hero-text{
+        max-width: 500px;
         margin-top: 40px;
         font-family: var(--Poppins-font);
+    } */
+    .hero-text h1{
+        overflow: hidden;
+        color: white;
+        font-size: 42px;
+        font-weight: 800;
+    }
+    .hero-text p{
+        color: white;
     }
     .social{
         position: absolute;
