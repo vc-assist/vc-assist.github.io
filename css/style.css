@@ -310,6 +310,10 @@ h1, h2, h3, h4, h5, h6{
     height: 100%;
 }
 
+.about-txt > h2 {
+    oveflow-y: hidden;
+}
+
 .about > div{
     font-size: 200px!important;
 }
