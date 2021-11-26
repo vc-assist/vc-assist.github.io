@@ -256,6 +256,12 @@ h1, h2, h3, h4, h5, h6{
     width: 8rem;
     clip-path: circle(53px at center);
 }
+.profile-img-s{
+    margin-top: 0.5em;
+    height:auto;
+    width: 7rem;
+    clip-path: circle(53px at center);
+}
 .illustration-vertical-img {
     width:7rem;
     height: auto;
