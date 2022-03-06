@@ -48,7 +48,9 @@ nav-item > a:link{
     z-index: 1;
     min-height: 500px;
 }
-
+#header-col{
+    background-color: white;
+}
 .nav-container{
     color: white!important;
 }
